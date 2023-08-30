@@ -16,7 +16,7 @@ const db = mysql.createPool({
 })
 
 app.post("/",(req,res)=> {
-    //console.log(req.body)
+    
     const selecao = req.body.selecao
     
     db.query(selecao,(erro,resdb)=>{
